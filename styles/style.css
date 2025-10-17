@@ -14,53 +14,53 @@
 .page {
   min-inline-size: 320px;
   inline-size: clamp(375px, 260.56px + 30.52vw, 700px);
-  min-block-size: 100dvb; 
+  min-block-size: 100dvb;
   block-size: 100vh;
-  font-family: var(--main-font), sans-serif; 
-  font-variation-settings: 'wght' var(--main-font-wght, 410);
+  font-family: var(--main-font), sans-serif;
+  font-variation-settings: "wght" var(--main-font-wght, 410);
   background-image: var(--grad);
-  background-attachment: fixed;       
+  background-attachment: fixed;
 }
 
 .header {
-  padding-block: 122px; 
+  padding-block: 122px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   gap: 20px;
-  font-family: var(--accent-font), fantasy; 
-  font-variation-settings: 'wght' var(--accent-font-wght, 400); 
+  font-family: var(--accent-font), fantasy;
+  font-variation-settings: "wght" var(--accent-font-wght, 400);
   text-align: center;
-  background-color: #fff; 
+  background-color: #fff;
   border: var(--container-border);
-  margin: 100px 0;        
+  margin: 100px 0;
 }
 
 .header__title {
-  font-size: clamp(3.0625rem, 1.91rem + 4.92vw, 4.0625rem);  
+  font-size: clamp(3.0625rem, 1.91rem + 4.92vw, 4.0625rem);
 }
 
 .header__subtitle {
-   font-size: clamp(0.875rem, 0.226rem + 2.7629vw, 1.4375rem);
-   text-transform: uppercase;   
+  font-size: clamp(0.875rem, 0.226rem + 2.7629vw, 1.4375rem);
+  text-transform: uppercase;
 }
 
 .card {
   margin-block-end: 50px;
   border: var(--container-border);
-  background-color: #fff; 
+  background-color: #fff;
 }
 
 .card__title {
   padding: 4px 10px;
-  font-variation-settings: 'wght' var(--title-font-wght, 715);
+  font-variation-settings: "wght" var(--title-font-wght, 715);
   border-block-end: var(--container-border);
 }
 
 @supports (font-variation-settings: normal) {
   .card__title {
-    font-variation-settings: 'wght' var(--title-font-wght, 715);
+    font-variation-settings: "wght" var(--title-font-wght, 715);
   }
 }
 
@@ -69,7 +69,7 @@
   font-size: var(--main-font-size);
 }
 
-.card__image {  
+.card__image {
   display: block;
   inline-size: 100%;
   object-position: right;
@@ -78,7 +78,7 @@
 }
 
 .filter__normal {
-  filter: none;  
+  filter: none;
 }
 
 .filter__hue {
@@ -102,7 +102,7 @@
 }
 
 .filter__blur {
-  filter: blur(0.6rem);  
+  filter: blur(0.6rem);
 }
 
 .filter__saturate {
@@ -120,11 +120,7 @@
   top: 25px;
   mix-blend-mode: hard-light;
   opacity: 50%;
-  text-shadow: 
-  -1px 0 #fff,
-  0 1px #fff,
-  1px 0 #fff,
-  0 -1px #fff;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
 @supports (-webkit-text-stroke: 1px #fff) {
@@ -134,7 +130,7 @@
   }
 }
 
-.card__text { 
+.card__text {
   padding: 25px;
   border-block-start: var(--container-border);
 }
@@ -142,26 +138,26 @@
 .card__text p {
   margin-block-end: 25px;
   line-height: 21px;
-  min-inline-size: min-content;  
+  min-inline-size: min-content;
 }
 
-button {    
+button {
   cursor: pointer;
-  overflow: hidden; 
+  overflow: hidden;
   background-color: transparent;
 }
 
-.buttons__container { 
+.buttons__container {
   display: flex;
   align-items: center;
-  justify-content: flex-end; 
-  gap: 7px; 
+  justify-content: flex-end;
+  gap: 7px;
 }
 
 .button__text,
 .watermark {
-  font-family: var(--accent-font), fantasy;  
-  font-size: var(--decoration-font-size);  
+  font-family: var(--accent-font), fantasy;
+  font-size: var(--decoration-font-size);
 }
 
 .card__icon-button {
@@ -171,7 +167,7 @@ button {
   max-height: 38px;
   padding: 0;
   border: none;
-  transition: border 0.3s ease;  
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -179,12 +175,12 @@ button {
 }
 
 .card__icon-button:focus-visible {
-  border: 2px solid #000; 
+  border: 2px solid #000;
 }
 
 .like-icon .contour {
   fill: var(--heart-contour-color);
-  transition: fill 0.1s linear;  
+  transition: fill 0.1s linear;
 }
 
 .like-icon.is-liked .contour {
@@ -194,7 +190,7 @@ button {
 
 .like-icon .core {
   fill: transparent;
-  transition: fill 0.3s linear 0.03s;  
+  transition: fill 0.3s linear 0.03s;
 }
 
 .like-icon:hover .core {
@@ -204,7 +200,7 @@ button {
 
 .like-icon:active .core {
   fill: var(--heart-bg-color);
-  transition: fill 0.3s linear;  
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .core {
@@ -214,22 +210,22 @@ button {
 
 .like-icon .main-body {
   fill: transparent;
-  transition: fill 0.3s linear;   
+  transition: fill 0.3s linear;
 }
 
 .like-icon:hover .main-body {
   fill: var(--heart-contour-color);
-  transition: fill 0.3s linear 0.05s;  
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon:active .main-body {
   fill: var(--heart-bg-color);
-  transition: fill 0.3s linear 0.05s;  
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--heart-bg-color);
-  transition: fill 0.3s linear 0.05s;  
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .heart {
@@ -238,7 +234,7 @@ button {
 }
 
 .like-icon .sparks {
-  opacity: 0;  
+  opacity: 0;
 }
 
 .like-icon.is-liked .sparks {
@@ -252,7 +248,7 @@ button {
 }
 
 .click__button::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background-color: #000;
@@ -268,7 +264,7 @@ button {
 .click__button .button__text {
   position: relative;
   z-index: 1;
-  line-height: 90%; 
+  line-height: 90%;
   mix-blend-mode: difference;
   color: #fff;
   background-color: #000;
@@ -292,16 +288,16 @@ button {
 }
 
 .click__button:focus {
-  outline: none; 
+  outline: none;
 }
 
 .click__button:focus-visible {
-  box-shadow: 2px 2px 0 #000;    
+  box-shadow: 2px 2px 0 #000;
 }
 
 .click__button:hover {
   transform: translateX(0);
-  transition: transform 0.5s ease-in-out;  
+  transition: transform 0.5s ease-in-out;
 }
 
 .card__like-button {
@@ -310,9 +306,9 @@ button {
   justify-content: center;
   font-family: var(--accent-font), fantasy;
   font-size: var(--decoration-font-size);
-  min-inline-size: 130px; 
+  min-inline-size: 130px;
   min-block-size: 38px;
-  padding: 10.5px 0;      
+  padding: 10.5px 0;
 }
 
 .save__area {
@@ -320,7 +316,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-block-end: 100px;  
+  padding-block-end: 100px;
 }
 
 .save__button {
@@ -339,11 +335,11 @@ button {
 }
 
 dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.75);;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 dialog[open] {
-  margin: auto; 
+  margin: auto;
   inline-size: clamp(341px, 327.15px + 3.69vw, 353px);
   display: flex;
   flex-direction: column;
@@ -353,14 +349,14 @@ dialog[open] {
   padding: 30px 40px;
   max-block-size: 191px;
   position: fixed;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-dialog[open] .dialog__message-area  {  
+dialog[open] .dialog__message-area {
   inline-size: clamp(261px, 100%, 293px);
-  display: flex; 
+  display: flex;
   align-items: center;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .dialog__icon {
@@ -369,7 +365,7 @@ dialog[open] .dialog__message-area  {
 
 .dialog__text {
   justify-self: center;
-  line-height: 150%;  
+  line-height: 150%;
   text-transform: uppercase;
 }
 
@@ -383,8 +379,8 @@ dialog[open] .dialog__message-area  {
 
 @media (width >=1440px) {
   .header {
-  padding-block: 130px;
-  margin-block-end: 96px;
+    padding-block: 130px;
+    margin-block-end: 96px;
   }
 
   .save__button {
@@ -400,9 +396,3 @@ dialog[open] .dialog__message-area  {
     padding: 30px;
   }
 }
-
-
-
-
-
-
