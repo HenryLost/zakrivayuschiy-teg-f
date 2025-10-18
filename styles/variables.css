@@ -1,16 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, 
 а так же их изменения в зависимости от ширины устройства */
 
-/*:root {
-  
-  
-   
-  --main-font-weight: 410;
-  --titles-font-weight: 715;
-  
-  --page-wdth: clamp(375px, 260.56px + 30.52vw, 700px);
-}*/
-
 :root {
   --main-font: 'Inter-Variable';
   --accent-font: 'PressStart2P';
